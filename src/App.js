@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Search from './components/Search.jsx'
+import Meals from './components/Meals.jsx'
+import Modal from './components/Modal.jsx'
+import Favorites from './components/Favorites.jsx'
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <h1>Meals React App</h1>
+  {/* <Search/> */}
+  {/* <Favorites/> */}
+  <Meals/>
+  {/* <Modal/> */}
     </div>
   );
 }
