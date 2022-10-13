@@ -310,7 +310,10 @@ cursor:pointer;
   overflow:scroll;
   background:var(--white);
   border-radius:var(--borderRadius);
+  position: relative;
 }
+
+
 .modal-img{
   height:15rem;
   border-top-left-radius:var(--borderRadius);
@@ -332,7 +335,29 @@ cursor:pointer;
 .modal-content a:hover{
   color:var(--black)
 }
+
+.modal-close-container{
+  display: flex;
+  position: absolute; 
+  margin-left: 50%;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
+  margin-right: 5px;
+  background-color:var(--white);
+  border-radius: 10%;
+}
+
+
 .close-btn{
-  background:var(--red-dark);
-  color:var(--white);
+  border: none;
+  color:var(--black);
+  background-color: transparent;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.modal-close-container:hover{
+  border: 1px solid red;
+  padding: 1px;
 }
