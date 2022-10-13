@@ -1,9 +1,12 @@
 import { useGlobalContext } from "../context"
 import {BsHeart,BsHeartFill} from 'react-icons/bs'
 
+
+
+
 const Meals = () => {
   const {meals,loading, selectMeal,addToFavorites} = useGlobalContext()
-  
+
   if(loading){
     return <section className="section">
       <h4>Loading......</h4>
@@ -14,7 +17,7 @@ const Meals = () => {
       <h4>There are no currently no meals matching your search. Please try again.</h4>
     </section>
   }
-  
+    
   return <section className="section-center">
       {meals.map((singleMeal)=>{
         const {idMeal, strMeal: title, strMealThumb: image} = singleMeal
@@ -24,12 +27,13 @@ const Meals = () => {
         <img src={image} className="img" onClick={() => selectMeal(idMeal)}/>
         <footer>
           <h5>{title}</h5>
-          <button className="like-btn" onClick={()=> addToFavorites(idMeal)}><BsHeart/></button>
+          <button className="like-btn" id="btnClickAndChange" onClick={()=> addToFavorites(idMeal)}><BsHeart/></button>
         </footer>
         </article>
       })}
     </section>
+  }
 
-}
+
 
 export default Meals

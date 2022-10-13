@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import { useGlobalContext } from '../context'
 import '../App.css'
-import {BsHeart} from 'react-icons/bs'
+import {GoVerified} from 'react-icons/go'
+
+
 
 
 const Search = () => {
@@ -28,13 +30,15 @@ const Search = () => {
 
 
   return <header className='search-container'>
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder='search for a meal' value={text}  onChange={handleChange} lassName='form-input'/>
+  <div className='logo'>The Food Spot <GoVerified/>
+  <p id="sub">A Meal Ideas API App</p></div>
+  <div className='form-div'>
+      <form onSubmit={handleSubmit} >
+      <input type="text" placeholder='search for a meal' value={text}  onChange={handleChange} className='form-input'/>
       <button type="submit" className='btn' >Search</button>
       <button type="button"  className='btn btn-hipster' onClick={handleRandomMeal}>Random</button>
-
     </form>
-
+  </div>
   </header>
 }
 

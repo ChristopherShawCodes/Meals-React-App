@@ -12,8 +12,7 @@ function App() {
 
   return (
     <div className="App">
-  <h1>Meals React App</h1>
-  <Search/>
+    <Search/>
   {favorites.length > 0 && <Favorites/>}
   <Meals/>
   {showModal && <Modal/>}

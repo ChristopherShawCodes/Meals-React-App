@@ -129,6 +129,17 @@ ul {
   display: block;
   object-fit: cover;
 }
+
+.logo{
+  font-size: 20px;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  position: relative;
+  width: 300px;
+  min-width: 200px;
+}
+
+
 /* buttons */
 
 .btn {
@@ -165,26 +176,37 @@ ul {
 
 /* Search */
 .search-container{
-  height:5rem;
-  background:var(--white);
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  height:6rem;
+  background: var(--grey-300);
+  display: flex;
+  align-items: center;
+  opacity: 80%;
 }
+
 .search-container form{
   width:var(--view-width);
   max-width:var(--max-width);
   display:flex;
   gap:0.5rem;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
+
 .search-container .form-input{
   max-width:200px;
   padding:0.375rem 0.75rem;
   border-radius:var(--borderRadius);
   background:var(--backgroundColor);
   border:1px solid var(--grey-200);
+  margin: 0 auto;
 }
+
+.form-div{
+  display: flex;
+  width:100%;
+  /* margin: 0 auto; */
+  width: 25rem;
+}
+
 ::placeholder{
   font-family:inherit;
   color:var(--grey-400);
@@ -192,11 +214,21 @@ ul {
 .search-container .btn{
   font-size:0.75rem;
 }
+
+#sub{
+  font-size: 12px;
+  font-style: italic;
+}
+
+
+
 /* Favorites */
 .favorites{
   background:var(--black);
+  opacity: 80%;
   color:var(--white);
   padding:1rem 0;
+  height:10rem;
 }
 .favorites-content{
   width:var(--view-width);
@@ -223,11 +255,12 @@ ul {
   color:var(--white);
   border:transparent;
   cursor:pointer;
-  font-size:0.5rem;
+  font-size:0.7rem;
   transition:var(--transition);
 }
 .remove-btn:hover{
-  color:var(--red-dark)
+  color:red;
+  font-size: 12px;
 }
 /* Meals */
 .section,.section-center{
