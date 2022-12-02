@@ -23,8 +23,8 @@ const Search = () => {
   }
 
   const handleRandomMeal = () =>{
-    setSearchTerm('')
-    setText('')
+    // setSearchTerm('')
+    // setText('')
     fetchRandomMeal()
   }
 
