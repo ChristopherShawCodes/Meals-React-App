@@ -8,7 +8,7 @@ const Favorites = () => {
 
   return <section className='favorites'>
     <div className='favorites-content'>
-      <h5>Favorites</h5>
+      <h5>Favoritesss</h5>
         <div className='favorites-container'>
           {favorites.map((item)=>{
           const{idMeal,strMealThumb:image} = item;
